@@ -300,3 +300,8 @@ footer p{margin:0;font-family:'Courier Prime',monospace;font-size:.82rem;color:v
 .hero-art{position:absolute;right:-6px;bottom:-4px;width:46%}
 .hero-art svg.art{width:100%;height:auto}
 .r-actions .btn[disabled]{opacity:.6;cursor:wait}
+
+.artbox{width:100%;height:100%;display:flex;align-items:center;justify-content:center}
+.card .art-wrap .artbox svg.art{width:86%;height:100%}
+.r-art .artbox{padding:16px 0}
+.r-art .artbox svg.art{width:88%;height:auto;max-height:290px}

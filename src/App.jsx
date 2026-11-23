@@ -13,7 +13,7 @@ function Card({ r, onOpen }) {
   const y = r.yield || (r.variants && r.variants.length ? `${r.variants.length} ${r.variantLabel ? r.variantLabel + 's' : (r.variants.every(v => !v.steps || !v.steps.length) ? 'flavours' : 'parts')}` : '');
   return (
     <button className="card" onClick={() => onOpen(r.id)}>
-      <div className={'art-wrap bg-' + r.cat}><Html html={art(r.art)} />{r.signature && <span className="sig"><Html html={icon('heart', '#F0EACF')} /> signature</span>}</div>
+      <div className={'art-wrap bg-' + r.cat}><Html as="div" className="artbox" html={art(r.art)} />{r.signature && <span className="sig"><Html html={icon('heart', '#F0EACF')} /> signature</span>}</div>
       <div className="body"><h3>{r.title}</h3><p>{r.blurb}</p>
         <div className="chips">{[r.time, y].filter(Boolean).map(c => <span className="chip" key={c}>{c}</span>)}</div></div>
     </button>
@@ -113,7 +113,7 @@ export default function App() {
         <div className="wrap">
           <section className="hero">
             <div className="panel p-main"><Html html={cutoutFlowers()} /><h1 className="wonk">what are we <em>making</em> today?</h1><p>A quiet little place for the recipes I keep coming back to.</p></div>
-            {newest ? <button className="panel p-a hero-btn" onClick={() => openRecipe(newest.id)}><span className="lbl">freshly added ✦</span><span className="hero-t">{newest.title}</span><span className="hero-go mono">open recipe →</span><Html className="hero-art" html={art(newest.art)} /></button>
+            {newest ? <button className="panel p-a hero-btn" onClick={() => openRecipe(newest.id)}><span className="lbl">freshly added ✦</span><span className="hero-t">{newest.title}</span><span className="hero-go mono">open recipe →</span><Html as="div" className="hero-art" html={art(newest.art)} /></button>
               : <div className="panel p-a"><span className="lbl">freshly added ✦</span><span className="hero-t">nothing yet</span></div>}
             <button className="panel p-b hero-btn" onClick={surprise}><span className="lbl">can't decide?</span><span className="hero-t">surprise me</span><span className="hero-go mono">pick a random recipe →</span><Html html={loopy('#5A3A2A', '#F0EACF', 92)} /></button>
           </section>
