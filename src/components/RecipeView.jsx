@@ -119,7 +119,7 @@ export default function RecipeView({ recipe: r, onBack, onEdit, onDelete, toast 
     <div className="wrap">
       <button className="back" onClick={onBack}><Html html={icon('back')} /> back to the box</button>
       <section className="r-head">
-        <div className={'r-art bg-' + r.cat}><Html html={art(r.art)} /><Html style={{ position: 'absolute', left: 14, top: 14 }} html={loopy('#F0EACF', '#5A3A2A', 54)} /></div>
+        <div className={'r-art bg-' + r.cat}><Html as="div" className="artbox" html={art(r.art)} /><Html style={{ position: 'absolute', left: 14, top: 14 }} html={loopy('#F0EACF', '#5A3A2A', 54)} /></div>
         <div className="r-info">
           <div className="cat"><Html html={icon(cat.icon, '#7C7B50')} />{cat.label}{r.signature && <> · <Html html={icon('heart', '#7C7B50')} /> signature</>}</div>
           <h1>{r.title}</h1>
