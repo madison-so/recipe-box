@@ -91,7 +91,7 @@ function ScalePanel({ r, s, set, open, setOpen }) {
   );
 }
 
-export default function RecipeView({ recipe: r, onBack, onEdit, onDelete, toast }) {
+export default function RecipeView({ recipe: r, onBack, onEdit, onDelete, toast, canEdit }) {
   const [vi, setVi] = useState(0);
   const [scales, setScales] = useState({});
   const [got, setGot] = useState({});
@@ -127,8 +127,8 @@ export default function RecipeView({ recipe: r, onBack, onEdit, onDelete, toast 
           {stats.length > 0 && <div className="stats">{stats.map(([k, v]) => <div className="stat" key={k}><b>{k}</b><span>{v}</span></div>)}</div>}
           <div className="r-actions">
             <button className="btn olive" onClick={pdf} disabled={busy}><Html html={icon('list', '#F0EACF')} /> {busy ? 'making your pdf…' : 'download pdf'}</button>
-            <button className="btn ghost" onClick={onEdit}><Html html={icon('pencil')} /> edit</button>
-            <button className="btn danger" onClick={onDelete}><Html html={icon('trash', '#7a3b2a')} /> delete</button>
+            {canEdit && <button className="btn ghost" onClick={onEdit}><Html html={icon('pencil')} /> edit</button>}
+            {canEdit && <button className="btn danger" onClick={onDelete}><Html html={icon('trash', '#7a3b2a')} /> delete</button>}
           </div>
         </div>
       </section>
