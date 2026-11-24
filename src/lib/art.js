@@ -285,6 +285,18 @@ export function art(name){
     <g transform="translate(184 60) rotate(22)"><path d="M0 30 V-24" stroke="#5C6332" stroke-width="2" stroke-linecap="round"/>${[-20,-12,-4,4,12,20].map(y=>`<path d="M0 ${y} l-8 -6 M0 ${y} l8 -6 M0 ${y} l-5 -9 M0 ${y} l5 -9" stroke="#7C7B50" stroke-width="1.6" stroke-linecap="round"/>`).join('')}</g>
     <g fill="none" ${S} opacity=".6"><path d="M90 46q-6-8 0-14t0-14"/><path d="M122 46q-6-8 0-14t0-14"/></g>
     <g fill="#F4EFDF" stroke="${INK}" stroke-width="1.6"><path d="M40 60l3-6 3 6-3 6z"/></g>`;
+  else if (name === 'mushtart') inner = `
+    ${[[64,98,1],[150,104,0.94]].map(([x,y,k])=>`<g transform="translate(${x} ${y}) scale(${k})">
+      <path d="M-34 -6 L-26 34 Q0 42 26 34 L34 -6 Z" fill="#E2B877" ${S}/>
+      <path d="M-40 -6 L-30 -22 L-14 -10 L0 -26 L14 -10 L30 -22 L40 -6 Q0 4 -40 -6 Z" fill="#EBC888" ${S}/>
+      <g stroke="#C9965A" stroke-width="1.6" fill="none" stroke-linecap="round"><path d="M-24 8 q4 2 8 0M2 14 q4 2 8 0M-12 24 q4 2 8 0M14 26 q4 2 8 0"/></g>
+      <ellipse cx="0" cy="-8" rx="28" ry="8" fill="#F2D27A" ${S} stroke-width="2"/>
+      ${[[-12,-12],[4,-14],[14,-8],[-2,-6]].map(([a,b])=>`<path d="M${a-6} ${b} q6 -8 12 0 z" fill="#8E6A50" stroke="${INK}" stroke-width="1.4"/><path d="M${a-1.5} ${b} v4 h3 v-4" fill="#E8D8BC" stroke="${INK}" stroke-width="1.2"/>`).join('')}
+      ${[[-18,-10],[10,-16],[20,-10]].map(([a,b])=>`<path d="M${a} ${b} l-3 -3 M${a} ${b} l3 -3 M${a} ${b} v-5" stroke="#6E7A3E" stroke-width="1.4" stroke-linecap="round"/>`).join('')}
+    </g>`).join('')}
+    <g transform="translate(184 56)" ${S} stroke-width="2"><path d="M-14 -2 q14 -18 28 0 z" fill="#B58A6A"/><path d="M-4 -2 v14 h8 v-14" fill="#EFE2C8"/></g>
+    <g transform="translate(108 34) rotate(-15)"><path d="M0 18 V-18" stroke="#5C6332" stroke-width="2" stroke-linecap="round"/>${[-14,-8,-2,4,10].map(y=>`<ellipse cx="-4" cy="${y}" rx="3.2" ry="1.8" fill="#7C7B50"/><ellipse cx="4" cy="${y+2}" rx="3.2" ry="1.8" fill="#7C7B50"/>`).join('')}</g>
+    <g fill="#F4EFDF" stroke="${INK}" stroke-width="1.6"><path d="M30 50l3-6 3 6-3 6z"/><path d="M196 128l3-6 3 6-3 6z"/></g>`;
   else if (name === 'pear') inner = `
     <g transform="translate(70 92)">
       <path d="M0 -40 C10 -40 12 -24 14 -14 C30 -4 34 16 28 30 C20 46 -20 46 -28 30 C-34 16 -30 -4 -14 -14 C-12 -24 -10 -40 0 -40 Z" fill="#C9CB7E" ${S}/>
@@ -307,7 +319,7 @@ export function art(name){
     <path d="M150 54c0-12 9-18 20-18 0 12-9 18-20 18z" fill="#7C7B50" ${S}/>`;
   return `<svg class="art" viewBox="0 0 220 160" aria-hidden="true"><g filter="url(#wob)">${inner}</g></svg>`;
 }
-export const ARTS = [['udon','noodle bowl'],['rice','pineapple fried rice'],['madeleine','bear madeleine'],['brownie','matcha square'],['shortbread','three cookies'],['tart','egg tarts'],['tea','iced tea'],['latte','iced latte & cookie'],['pear','pear & matcha'],['matchalatte','matcha latte'],['mochi','mochi balls'],['chocbrownie','chocolate brownie'],['wings','glazed wings'],['muffin','blueberry muffins'],['spaghetti','one-pan spaghetti'],['yuzu','yuzu tea'],['buns','bread rolls'],['eggbites','egg bites'],['mayak','soy-marinated eggs'],['salmon','miso butter salmon'],['syrup-honey','syrup · honey'],['popcorn','popcorn chicken'],['syrup','syrup bottles'],['syrup-earl-grey','syrup · earl grey'],['syrup-osmanthus','syrup · osmanthus'],['syrup-jasmine','syrup · jasmine'],['syrup-simple','syrup · simple'],['syrup-pear','syrup · pear'],['plate','flower plate']];
+export const ARTS = [['udon','noodle bowl'],['rice','pineapple fried rice'],['madeleine','bear madeleine'],['brownie','matcha square'],['shortbread','three cookies'],['tart','egg tarts'],['tea','iced tea'],['latte','iced latte & cookie'],['pear','pear & matcha'],['matchalatte','matcha latte'],['mochi','mochi balls'],['chocbrownie','chocolate brownie'],['wings','glazed wings'],['muffin','blueberry muffins'],['spaghetti','one-pan spaghetti'],['yuzu','yuzu tea'],['buns','bread rolls'],['eggbites','egg bites'],['mayak','soy-marinated eggs'],['salmon','miso butter salmon'],['mushtart','mushroom tarts'],['syrup-honey','syrup · honey'],['popcorn','popcorn chicken'],['syrup','syrup bottles'],['syrup-earl-grey','syrup · earl grey'],['syrup-osmanthus','syrup · osmanthus'],['syrup-jasmine','syrup · jasmine'],['syrup-simple','syrup · simple'],['syrup-pear','syrup · pear'],['plate','flower plate']];
 export const DEFS = `<svg class="defs" aria-hidden="true"><defs>
   <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4"/><feDisplacementMap in="SourceGraphic" scale="2.6"/></filter>
   <filter id="wobBig"><feTurbulence type="fractalNoise" baseFrequency="0.025" numOctaves="3" seed="9"/><feDisplacementMap in="SourceGraphic" scale="9"/></filter></defs></svg>`;
