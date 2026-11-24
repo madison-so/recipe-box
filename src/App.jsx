@@ -6,6 +6,13 @@ import { art, icon, logo, loopy, loopyRaw, cutoutFlowers, DEFS } from './lib/art
 import { CATS, SORTS, sortList, slug } from './lib/text.js';
 import { load, save, resetToSeed, pref, downloadBlob } from './lib/storage.js';
 
+// Editing tools are hidden from visitors. Open the site with ?edit to turn them on (remembered in this browser), ?view to turn them off.
+function initOwner(){
+  const q = new URLSearchParams(window.location.search);
+  if (q.has('edit')) pref.set('little-recipe-box-owner', '1');
+  if (q.has('view')) pref.set('little-recipe-box-owner', '0');
+  return pref.get('little-recipe-box-owner', '0') === '1';
+}
 const readHash = () => decodeURIComponent((window.location.hash || '').slice(1));
 const pl = (n, w) => `${n} ${w}${n === 1 ? '' : 's'}`;
 
@@ -22,6 +29,7 @@ function Card({ r, onOpen }) {
 
 export default function App() {
   const [recipes, setRecipes] = useState(load);
+  const [owner, setOwner] = useState(initOwner);
   const [tab, setTab] = useState('all');
   const [q, setQ] = useState('');
   const [sort, setSort] = useState(() => pref.get('little-recipe-box-sort', 'default'));
@@ -99,14 +107,14 @@ export default function App() {
         <div className="spacer" />
         <label className="search"><Html html={icon('search')} /><input type="search" placeholder="search recipes or ingredients" value={q}
           onChange={e => { setQ(e.target.value); if (route.mode !== 'list') { setRoute({ mode: 'list', id: null }); history.replaceState(null, '', window.location.pathname); } }} /></label>
-        <button className="btn olive" onClick={() => { setRoute({ mode: 'form', id: null }); window.scrollTo({ top: 0 }); }}><Html html={icon('plus', '#F0EACF')} /> new recipe</button>
+        {owner && <button className="btn olive" onClick={() => { setRoute({ mode: 'form', id: null }); window.scrollTo({ top: 0 }); }}><Html html={icon('plus', '#F0EACF')} /> new recipe</button>}
       </div></header>
 
-      {route.mode === 'form' ? (
+      {route.mode === 'form' && owner ? (
         <RecipeForm key={route.id || 'new'} recipe={route.id ? recipes.find(r => r.id === route.id) : null} defaultCat={tab in CATS ? tab : 'bowls'}
           onSave={saveRecipe} onCancel={() => route.id ? openRecipe(route.id) : goHome()} />
       ) : route.mode === 'recipe' && current ? (
-        <RecipeView key={current.id} recipe={current} toast={toast} onBack={goHome}
+        <RecipeView key={current.id} recipe={current} toast={toast} onBack={goHome} canEdit={owner}
           onEdit={() => { setRoute({ mode: 'form', id: current.id }); window.scrollTo({ top: 0 }); }}
           onDelete={() => setConfirm(current)} />
       ) : (
@@ -125,19 +133,21 @@ export default function App() {
               {Object.keys(SORTS).map(k => <option key={k} value={k}>{SORTS[k]}</option>)}</select></label></div></div>
           <div className="grid">
             {shown.length ? shown.map(r => <Card key={r.id} r={r} onOpen={openRecipe} />) : <div className="empty">nothing here yet{q ? ' for that search' : ''}.</div>}
-            {!q && <button className="card add" onClick={() => setRoute({ mode: 'form', id: null })}><Html html={icon('sprout', '#7C7B50')} /><span>add a new recipe</span></button>}
+            {!q && owner && <button className="card add" onClick={() => setRoute({ mode: 'form', id: null })}><Html html={icon('sprout', '#7C7B50')} /><span>add a new recipe</span></button>}
           </div>
         </div>
       )}
 
       <footer><div className="wrap">
         <Html html={`<svg viewBox="0 0 280 60" aria-hidden="true"><g filter="url(#wob)">${[30, 100, 170, 240].map((x, i) => `<g transform="translate(${x} 30) scale(.55)">${i % 2 ? loopyRaw('#5A3A2A', '#A1AFB8') : loopyRaw('#A1AFB8', '#5A3A2A')}</g>`).join('')}</g></svg>`} />
-        <div className="foot-actions">
+        {owner ? <div className="foot-actions">
+          <span className="owner-chip mono">editing mode</span>
           <button className="linkbtn" onClick={exportJson}>export recipes</button>
           <button className="linkbtn" onClick={() => fileRef.current && fileRef.current.click()}>import recipes</button>
           <button className="linkbtn" onClick={() => setConfirm({ reset: true })}>reset to original</button>
+          <button className="linkbtn" onClick={() => { pref.set('little-recipe-box-owner', '0'); setOwner(false); goHome(); }}>exit editing</button>
           <input ref={fileRef} type="file" accept="application/json,.json" hidden onChange={e => { const file = e.target.files[0]; if (file) importJson(file); e.target.value = ''; }} />
-        </div>
+        </div> : <div />}
         <p>made with butter, patience &amp; slow afternoons.</p>
       </div></footer>
 
