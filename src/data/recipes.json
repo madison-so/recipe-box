@@ -871,6 +871,150 @@
   "notes": "Original recipe: “Korean Soy Marinated Eggs (Mayak Eggs)” by cafemaddy."
  },
  {
+  "id": "mushroom-gruyere-tarts",
+  "title": "Mushroom & Gruyère Tarts",
+  "cat": "bits",
+  "also": [
+   "bakes"
+  ],
+  "art": "mushtart",
+  "added": "2026-11-24T03:36:00.000Z",
+  "time": "20–25 min bake",
+  "yield": "12 tartlets",
+  "level": "Easy",
+  "blurb": "Buttery, flaky puff pastry cups filled with caramelized garlic mushrooms, nutty Gruyère and fresh thyme, finished with Parmesan. Perfect as individual savoury appetizers.",
+  "scale": {
+   "kind": "count",
+   "base": 12,
+   "unit": "tartlets"
+  },
+  "ingredients": [
+   [
+    "#",
+    "Puff pastry"
+   ],
+   [
+    "2 sheets (approx. 490 g)",
+    "Frozen puff pastry, thawed"
+   ],
+   [
+    "1",
+    "Egg, beaten (egg wash)"
+   ],
+   [
+    "",
+    "Butter or cooking spray, for greasing the muffin tin"
+   ],
+   [
+    "#",
+    "Mushroom filling"
+   ],
+   [
+    "300 g",
+    "Mushrooms (cremini or button), finely diced"
+   ],
+   [
+    "25 g",
+    "Butter"
+   ],
+   [
+    "15 g",
+    "Olive oil"
+   ],
+   [
+    "3 cloves",
+    "Garlic, minced"
+   ],
+   [
+    "1 small",
+    "Shallot, finely diced (optional)"
+   ],
+   [
+    "1 tsp",
+    "Fresh thyme leaves"
+   ],
+   [
+    "to taste",
+    "Salt and black pepper"
+   ],
+   [
+    "#",
+    "Cheese"
+   ],
+   [
+    "120 g",
+    "Gruyère cheese, grated"
+   ],
+   [
+    "20 g",
+    "Parmesan cheese, finely grated"
+   ],
+   [
+    "#",
+    "Garnish (optional)"
+   ],
+   [
+    "",
+    "Fresh thyme leaves"
+   ],
+   [
+    "",
+    "Parmesan shavings"
+   ],
+   [
+    "",
+    "Freshly cracked black pepper"
+   ],
+   [
+    "",
+    "Small drizzle of honey"
+   ]
+  ],
+  "ingNote": "You'll need a regular 12-cup muffin tin.",
+  "steps": [
+   "# Prepare the mushroom filling",
+   "Heat butter and olive oil in a frying pan over medium-high heat.",
+   "Add diced mushrooms and cook for **5–7 minutes**, stirring occasionally, until golden brown and their moisture has evaporated.",
+   "Add shallots (if using) and cook for another **2 minutes**.",
+   "Add minced garlic and thyme. Cook for **30–60 seconds** until fragrant.",
+   "Season with salt and black pepper.",
+   "Remove from heat and let the mushroom mixture cool completely.",
+   "> Make sure the mushrooms are relatively dry before assembling. Excess moisture can make the pastry bottoms soggy.",
+   "# Prepare the puff pastry",
+   "Preheat oven to **400°F (200°C)**.",
+   "Lightly grease the cavities of your muffin tin.",
+   "Lightly flour your work surface.",
+   "Roll out each puff pastry sheet slightly to even out the thickness.",
+   "Cut each sheet into 6 squares, approximately 10–11 cm each.",
+   "Gently press each pastry square into a muffin cavity.",
+   "Allow the corners to stick up slightly above the edges of the tin.",
+   "Prick the bottom lightly with a fork.",
+   "# Assemble the tartlets",
+   "For each tartlet:",
+   "- Add approximately 10 grams of grated Gruyère to the bottom.",
+   "- Add 1–2 tablespoons of the cooled mushroom filling.",
+   "- Sprinkle a little Parmesan over the mushrooms.",
+   "- Brush the exposed pastry edges lightly with beaten egg.",
+   "> Don't overfill the cups. Leave a little space for the cheese to melt and bubble.",
+   "# Bake",
+   "Place the muffin tin on the middle rack of your preheated oven.",
+   "Bake at **400°F (200°C) for 20–25 minutes**, until the pastry is puffed and golden brown, and the cheese is melted and bubbling.",
+   "Remove from the oven and allow to rest in the muffin tin for **5–10 minutes**.",
+   "Carefully loosen the edges with a small knife and transfer to a cooling rack.",
+   "# Garnish and serve",
+   "Finish each tartlet with a few fresh thyme leaves, a tiny Parmesan shaving and freshly cracked black pepper.",
+   "> For something a little more special, add a very small drizzle of honey. It complements the earthy mushrooms and nutty Gruyère beautifully."
+  ],
+  "tips": [
+   "**Keep pastry cold:** Work with one sheet at a time. If the pastry becomes too soft, refrigerate it for 10 minutes.",
+   "**Cook mushrooms thoroughly:** Don't rush this step. Removing moisture is key to crispy pastry.",
+   "**Cool the filling:** Hot mushrooms can soften the raw pastry before baking.",
+   "**Don't overfill:** You want visible mushrooms and cheese without overflowing.",
+   "**Check the bottoms:** If they're still pale, give them another 2–3 minutes in the oven."
+  ],
+  "notes": "**Make-ahead tip:** You can prepare the mushroom filling a day ahead and refrigerate it. Assemble the tartlets just before baking for the flakiest pastry.\n\nThe ideal result: rustic golden pastry edges, a generous mushroom filling, melted Gruyère underneath and little thyme leaves on top."
+ },
+ {
   "id": "lemon-vanilla-madeleines",
   "title": "Lemon Vanilla Madeleines",
   "cat": "bakes",
