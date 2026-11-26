@@ -297,6 +297,32 @@ export function art(name){
     <g transform="translate(184 56)" ${S} stroke-width="2"><path d="M-14 -2 q14 -18 28 0 z" fill="#B58A6A"/><path d="M-4 -2 v14 h8 v-14" fill="#EFE2C8"/></g>
     <g transform="translate(108 34) rotate(-15)"><path d="M0 18 V-18" stroke="#5C6332" stroke-width="2" stroke-linecap="round"/>${[-14,-8,-2,4,10].map(y=>`<ellipse cx="-4" cy="${y}" rx="3.2" ry="1.8" fill="#7C7B50"/><ellipse cx="4" cy="${y+2}" rx="3.2" ry="1.8" fill="#7C7B50"/>`).join('')}</g>
     <g fill="#F4EFDF" stroke="${INK}" stroke-width="1.6"><path d="M30 50l3-6 3 6-3 6z"/><path d="M196 128l3-6 3 6-3 6z"/></g>`;
+  else if (name === 'pesto') inner = `
+    <path d="M18 112 L196 112 L188 136 Q110 146 26 136 Z" fill="#C9A66B" ${S}/>
+    <g stroke="#A88650" stroke-width="1.6" fill="none"><path d="M40 122 h40M100 126 h44M156 120 h24"/></g>
+    ${[[60,82,-6],[110,76,4],[160,84,8]].map(([x,y,r])=>`<g transform="translate(${x} ${y}) rotate(${r})">
+      <rect x="-24" y="-22" width="48" height="44" rx="4" fill="#E9C27E" ${S}/>
+      <rect x="-15" y="-13" width="30" height="26" rx="2" fill="#6E8A3E" stroke="#4E6A2A" stroke-width="1.6"/>
+      <g fill="#8EA858">${[[-8,-6],[6,-8],[-4,6],[8,5]].map(([a,b])=>`<circle cx="${a}" cy="${b}" r="1.6"/>`).join('')}</g>
+      <path d="M-11 -2 a7 7 0 0 1 14 0 z" fill="#D9573F" stroke="${INK}" stroke-width="1.4"/><path d="M-8 -2 a4 4 0 0 1 8 0" fill="none" stroke="#F2A08A" stroke-width="1.2"/>
+      <path d="M1 8 a6 6 0 0 1 12 0 z" fill="#D9573F" stroke="${INK}" stroke-width="1.4"/>
+      <g fill="#FBF6E7">${[[-10,8],[10,-8],[-2,-10]].map(([a,b])=>`<rect x="${a}" y="${b}" width="2" height="2" transform="rotate(30 ${a} ${b})"/>`).join('')}</g>
+      <path d="M-6 -16 q4 -6 10 -4 q-2 6 -10 4 z" fill="#5E8A3A" stroke="${INK}" stroke-width="1.2"/>
+    </g>`).join('')}
+    <g transform="translate(190 46)"><path d="M0 -14 C10 -14 14 0 0 14 C-14 0 -10 -14 0 -14 Z" fill="#5E8A3A" ${S} stroke-width="2"/><path d="M0 -10 V12" stroke="#3E5A22" stroke-width="1.4"/></g>
+    <g fill="#F4EFDF" stroke="${INK}" stroke-width="1.6"><path d="M30 46l3-6 3 6-3 6z"/><path d="M112 26l3-6 3 6-3 6z"/></g>`;
+  else if (name === 'mushpasta') inner = `
+    <path d="M30 84 Q34 138 110 142 Q186 138 190 84 Z" fill="#F0EACF" ${S}/>
+    <path d="M44 110 q11 7 22 0 t22 0 t22 0 t22 0 t22 0 t16 0" fill="none" stroke="#93ADA8" stroke-width="2" stroke-linecap="round"/>
+    <ellipse cx="110" cy="84" rx="80" ry="15" fill="#E9DDB4" ${S}/>
+    <path d="M44 84 C60 62 160 62 176 84 Q110 96 44 84 Z" fill="#C9D08E" ${S} stroke-width="2"/>
+    ${[[64,74,-30],[84,66,20],[104,62,-10],[126,64,35],[148,72,-20],[94,78,50],[120,78,-40],[140,82,10],[74,82,15]].map(([x,y,r])=>`<g transform="translate(${x} ${y}) rotate(${r})"><rect x="-9" y="-4.5" width="18" height="9" rx="2" fill="#EFD38E" stroke="${INK}" stroke-width="1.4"/><path d="M-4 -4.5 v9 M1 -4.5 v9 M6 -4.5 v9" stroke="#C9A65A" stroke-width="1"/></g>`).join('')}
+    ${[[78,70],[112,70],[136,76]].map(([x,y])=>`<path d="M${x-7} ${y} q7 -9 14 0 z" fill="#8E6A50" stroke="${INK}" stroke-width="1.4"/><path d="M${x-1.5} ${y} v4 h3 v-4" fill="#E8D8BC" stroke="${INK}" stroke-width="1.1"/>`).join('')}
+    <g fill="#5E8A3A" stroke="${INK}" stroke-width="1.2"><path d="M98 58 q5 -8 12 -5 q-3 7 -12 5 z"/><path d="M152 66 q5 -8 12 -5 q-3 7 -12 5 z"/></g>
+    <g fill="#FBF6E7">${[[70,66],[100,72],[128,70],[150,78],[88,62]].map(([a,b])=>`<rect x="${a}" y="${b}" width="2.2" height="2.2" transform="rotate(30 ${a} ${b})"/>`).join('')}</g>
+    <g fill="none" ${S} opacity=".6"><path d="M92 44q-6-8 0-14t0-14"/><path d="M126 44q-6-8 0-14t0-14"/></g>
+    <g ${S} stroke="#543F2B" stroke-width="3.2" fill="none"><path d="M184 24 L148 70"/></g><path d="M148 70 l-6 10 M148 70 l-2 11 M148 70 l3 11" stroke="#543F2B" stroke-width="2" stroke-linecap="round"/>
+    <g fill="#F4EFDF" stroke="${INK}" stroke-width="1.6"><path d="M34 46l3-6 3 6-3 6z"/></g>`;
   else if (name === 'pear') inner = `
     <g transform="translate(70 92)">
       <path d="M0 -40 C10 -40 12 -24 14 -14 C30 -4 34 16 28 30 C20 46 -20 46 -28 30 C-34 16 -30 -4 -14 -14 C-12 -24 -10 -40 0 -40 Z" fill="#C9CB7E" ${S}/>
@@ -319,7 +345,7 @@ export function art(name){
     <path d="M150 54c0-12 9-18 20-18 0 12-9 18-20 18z" fill="#7C7B50" ${S}/>`;
   return `<svg class="art" viewBox="0 0 220 160" aria-hidden="true"><g filter="url(#wob)">${inner}</g></svg>`;
 }
-export const ARTS = [['udon','noodle bowl'],['rice','pineapple fried rice'],['madeleine','bear madeleine'],['brownie','matcha square'],['shortbread','three cookies'],['tart','egg tarts'],['tea','iced tea'],['latte','iced latte & cookie'],['pear','pear & matcha'],['matchalatte','matcha latte'],['mochi','mochi balls'],['chocbrownie','chocolate brownie'],['wings','glazed wings'],['muffin','blueberry muffins'],['spaghetti','one-pan spaghetti'],['yuzu','yuzu tea'],['buns','bread rolls'],['eggbites','egg bites'],['mayak','soy-marinated eggs'],['salmon','miso butter salmon'],['mushtart','mushroom tarts'],['syrup-honey','syrup · honey'],['popcorn','popcorn chicken'],['syrup','syrup bottles'],['syrup-earl-grey','syrup · earl grey'],['syrup-osmanthus','syrup · osmanthus'],['syrup-jasmine','syrup · jasmine'],['syrup-simple','syrup · simple'],['syrup-pear','syrup · pear'],['plate','flower plate']];
+export const ARTS = [['udon','noodle bowl'],['rice','pineapple fried rice'],['madeleine','bear madeleine'],['brownie','matcha square'],['shortbread','three cookies'],['tart','egg tarts'],['tea','iced tea'],['latte','iced latte & cookie'],['pear','pear & matcha'],['matchalatte','matcha latte'],['mochi','mochi balls'],['chocbrownie','chocolate brownie'],['wings','glazed wings'],['muffin','blueberry muffins'],['spaghetti','one-pan spaghetti'],['yuzu','yuzu tea'],['buns','bread rolls'],['eggbites','egg bites'],['mayak','soy-marinated eggs'],['salmon','miso butter salmon'],['mushtart','mushroom tarts'],['pesto','pesto squares'],['mushpasta','mushroom pasta'],['syrup-honey','syrup · honey'],['popcorn','popcorn chicken'],['syrup','syrup bottles'],['syrup-earl-grey','syrup · earl grey'],['syrup-osmanthus','syrup · osmanthus'],['syrup-jasmine','syrup · jasmine'],['syrup-simple','syrup · simple'],['syrup-pear','syrup · pear'],['plate','flower plate']];
 export const DEFS = `<svg class="defs" aria-hidden="true"><defs>
   <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4"/><feDisplacementMap in="SourceGraphic" scale="2.6"/></filter>
   <filter id="wobBig"><feTurbulence type="fractalNoise" baseFrequency="0.025" numOctaves="3" seed="9"/><feDisplacementMap in="SourceGraphic" scale="9"/></filter></defs></svg>`;

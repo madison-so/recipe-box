@@ -1,7 +1,7 @@
 // Text, quantity and scaling helpers for the recipe box.
 export const esc = s => String(s==null?'':s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export const MS = '\u0001', ME = '\u0002';
-export const fmt = s => esc(s).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/\u0001(.*?)\u0002/g,'<span class="sc">$1</span>');
+export const fmt = s => esc(s).replace(/\[\[([a-z0-9-]+)\|([^\]]+)\]\]/g,'<a class="rlink" href="#$1">$2</a>').replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/\u0001(.*?)\u0002/g,'<span class="sc">$1</span>');
 export const FR = {'¼':.25,'½':.5,'¾':.75,'⅓':1/3,'⅔':2/3,'⅛':.125};
 export const Q = '(?:\\d+(?:\\.\\d+)?(?:\\s?[¼½¾⅓⅔⅛])?|[¼½¾⅓⅔⅛])';
 export const RANGE = '(' + Q + ')(?:\\s?[–-]\\s?(' + Q + '))?';
