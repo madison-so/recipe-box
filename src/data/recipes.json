@@ -561,6 +561,153 @@
   "notes": "Original recipe from Tiffy Cooks (tiffycooks.com), Salmon with Miso Butter."
  },
  {
+  "id": "creamy-mushroom-pesto-pasta",
+  "title": "Creamy Mushroom Pesto Pasta",
+  "cat": "bowls",
+  "art": "mushpasta",
+  "added": "2026-11-26T00:25:00.000Z",
+  "time": "10 min prep + 20 min cook",
+  "yield": "2 servings",
+  "level": "Easy",
+  "blurb": "A rich, creamy pasta with golden sautéed mushrooms, garlic, fresh thyme, basil pesto, heavy cream and Parmesan.",
+  "scale": {
+   "kind": "count",
+   "base": 2,
+   "unit": "servings"
+  },
+  "ingredients": [
+   [
+    "#",
+    "Pasta"
+   ],
+   [
+    "180 g",
+    "Pasta (fettuccine, penne or rigatoni)"
+   ],
+   [
+    "",
+    "Salt, for pasta water"
+   ],
+   [
+    "#",
+    "Mushroom mixture"
+   ],
+   [
+    "200 g",
+    "Mushrooms, finely sliced or diced"
+   ],
+   [
+    "20 g",
+    "Butter"
+   ],
+   [
+    "1 tbsp",
+    "Olive oil"
+   ],
+   [
+    "2 cloves",
+    "Garlic, minced"
+   ],
+   [
+    "½ small",
+    "Shallot, finely diced (optional)"
+   ],
+   [
+    "½ tsp",
+    "Fresh thyme leaves"
+   ],
+   [
+    "to taste",
+    "Salt and black pepper"
+   ],
+   [
+    "#",
+    "Creamy pesto sauce"
+   ],
+   [
+    "30 g (approx. 2 tbsp)",
+    "Basil pesto"
+   ],
+   [
+    "100 ml",
+    "Heavy cream (35%)"
+   ],
+   [
+    "25 g",
+    "Parmesan, finely grated"
+   ],
+   [
+    "½ cup",
+    "Reserved pasta water (use as needed)"
+   ],
+   [
+    "1 tbsp",
+    "Butter"
+   ],
+   [
+    "#",
+    "Garnish"
+   ],
+   [
+    "",
+    "Extra Parmesan"
+   ],
+   [
+    "",
+    "Fresh basil leaves"
+   ],
+   [
+    "",
+    "Freshly cracked black pepper"
+   ],
+   [
+    "optional",
+    "Small squeeze of lemon juice"
+   ]
+  ],
+  "ingNote": "",
+  "steps": [
+   "# Prepare the mushroom mixture",
+   "Heat 20 g butter and olive oil in a large frying pan over medium-high heat.",
+   "Add mushrooms and cook for **5–7 minutes** until golden brown and their moisture has evaporated.",
+   "Add shallots (if using) and cook for another **2 minutes**.",
+   "Add minced garlic and thyme. Cook for **30–60 seconds** until fragrant.",
+   "Season with salt and black pepper.",
+   "Remove from heat briefly.",
+   "# Cook the pasta",
+   "Bring a large pot of salted water to a boil.",
+   "Add pasta and cook according to package instructions until al dente.",
+   "Before draining, reserve at least ½ cup pasta water.",
+   "Drain pasta. Do not rinse.",
+   "# Make the creamy pesto sauce",
+   "In the same frying pan, melt 1 tbsp butter over medium-low heat.",
+   "Add your mushroom mixture and warm through.",
+   "Add 30 g basil pesto and stir until evenly distributed.",
+   "Pour in 100 ml heavy cream.",
+   "Stir gently until combined.",
+   "Add grated Parmesan.",
+   "Simmer gently for **2–3 minutes** until the sauce begins to thicken.",
+   "> Avoid boiling the cream vigorously.",
+   "# Combine pasta and sauce",
+   "Add cooked pasta directly into the pan.",
+   "Toss until the pasta is coated in sauce.",
+   "Gradually add reserved pasta water, 1–2 tbsp at a time.",
+   "Continue tossing until the sauce becomes glossy and clings to the pasta.",
+   "Taste and adjust with salt, pepper and additional pesto if desired.",
+   "Add a small squeeze of lemon juice to brighten the sauce.",
+   "# Garnish and serve",
+   "Finish with freshly grated Parmesan, fresh basil leaves, cracked black pepper and a little drizzle of olive oil."
+  ],
+  "tips": [
+   "**Mushrooms:** Cook them until golden rather than just softened. This gives the pasta a deeper, more savoury flavour.",
+   "**Pesto:** Add before the cream so it distributes evenly throughout the sauce.",
+   "**Cream:** Use 35% heavy cream for a richer, thicker sauce.",
+   "**Pasta water:** This helps emulsify the sauce and makes it cling to the pasta.",
+   "**Thyme:** Keep it! It pairs beautifully with mushrooms and basil pesto."
+  ],
+  "notes": "**Use up your tart filling:** leftover mushroom mixture from the [[mushroom-gruyere-tarts|Mushroom & Gruyère Tarts]] works perfectly here.\n\n**Favourite combination:** Rigatoni, 35% cream, basil pesto, the Gruyère-tart mushroom filling and lots of Parmesan. The ridges in rigatoni hold onto the creamy sauce really nicely."
+ },
+ {
   "id": "air-fryer-taiwanese-popcorn-chicken",
   "title": "Taiwanese Popcorn Chicken: Air-Fried",
   "cat": "bits",
@@ -1012,7 +1159,77 @@
    "**Don't overfill:** You want visible mushrooms and cheese without overflowing.",
    "**Check the bottoms:** If they're still pale, give them another 2–3 minutes in the oven."
   ],
-  "notes": "**Make-ahead tip:** You can prepare the mushroom filling a day ahead and refrigerate it. Assemble the tartlets just before baking for the flakiest pastry.\n\nThe ideal result: rustic golden pastry edges, a generous mushroom filling, melted Gruyère underneath and little thyme leaves on top."
+  "notes": "**Make-ahead tip:** You can prepare the mushroom filling a day ahead and refrigerate it. Assemble the tartlets just before baking for the flakiest pastry.\n\nThe ideal result: rustic golden pastry edges, a generous mushroom filling, melted Gruyère underneath and little thyme leaves on top.\n\n**Leftover mushroom mix?** Save any extra filling for the [[creamy-mushroom-pesto-pasta|Creamy Mushroom Pesto Pasta]]. About 100–150 g is enough for two servings."
+ },
+ {
+  "id": "pesto-puff-pastry-squares",
+  "title": "Pesto Puff Pastry Squares",
+  "cat": "bits",
+  "also": [
+   "bakes"
+  ],
+  "art": "pesto",
+  "added": "2026-11-25T19:43:00.000Z",
+  "time": "15 min prep + 18–22 min bake",
+  "yield": "12 pieces",
+  "level": "Easy",
+  "blurb": "Flaky puff pastry squares spread with basil pesto and topped with cherry tomatoes and Parmesan. Savoury, golden and so pretty on a grazing table.",
+  "scale": {
+   "kind": "count",
+   "base": 12,
+   "unit": "pieces"
+  },
+  "ingredients": [
+   [
+    "1 sheet (approx. 250 g)",
+    "Frozen puff pastry"
+   ],
+   [
+    "60 g",
+    "Basil pesto"
+   ],
+   [
+    "6–8",
+    "Cherry tomatoes"
+   ],
+   [
+    "25 g",
+    "Parmesan cheese, grated"
+   ],
+   [
+    "1",
+    "Egg"
+   ],
+   [
+    "10 g",
+    "Water"
+   ],
+   [
+    "to taste",
+    "Black pepper"
+   ],
+   [
+    "for garnish",
+    "Fresh basil"
+   ]
+  ],
+  "ingNote": "Made with Vincenzo's basil pesto.",
+  "steps": [
+   "**Thaw puff pastry:** Let the pastry thaw in the fridge until pliable but still cold. Don't let it become warm or sticky.",
+   "**Prepare pastry:** Roll it out gently on a lightly floured surface. Cut into equal squares, one per piece.",
+   "**Score the edges:** Lightly score a smaller square inside each piece, leaving approximately a 1 cm border. Don't cut all the way through.",
+   "**Add pesto:** Spread approximately 5 grams of pesto in the centre of each square, staying within the scored border.",
+   "**Add toppings:** Cut cherry tomatoes in half and place 1–2 halves on each square. Sprinkle with Parmesan and black pepper.",
+   "**Egg wash:** Beat egg with water and brush the pastry borders.",
+   "**Bake:** Bake at **400°F (200°C) for 18–22 minutes**, until puffed and golden brown.",
+   "**Garnish:** Allow to cool slightly. Finish with fresh basil and a little extra Parmesan."
+  ],
+  "tips": [
+   "Add a tiny basil leaf on each square after baking.",
+   "Use halved cherry tomatoes with the cut side facing up.",
+   "Arrange on a vintage silver tray or wooden serving board."
+  ],
+  "notes": "**Keep them small:** around 5–6 cm squares.\n\nMade with **Vincenzo's basil pesto**."
  },
  {
   "id": "lemon-vanilla-madeleines",
