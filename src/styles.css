@@ -306,3 +306,6 @@ footer p{margin:0;font-family:'Courier Prime',monospace;font-size:.82rem;color:v
 .r-art .artbox{padding:16px 0}
 .r-art .artbox svg.art{width:88%;height:auto;max-height:290px}
 .owner-chip{font-size:.75rem;background:#7C7B50;color:#F0EACF;padding:3px 10px;border-radius:999px}
+
+.rlink{color:#543F2B;font-weight:600;text-decoration:underline;text-decoration-style:wavy;text-decoration-color:#7C7B50;text-underline-offset:3px}
+.rlink:hover{color:#352E2A}
