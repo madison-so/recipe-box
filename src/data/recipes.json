@@ -2202,6 +2202,67 @@
   "added": "2026-11-22T23:40:02.000Z"
  },
  {
+  "id": "iced-spanish-latte",
+  "title": "Iced Spanish Latte (AeroPress)",
+  "cat": "sips",
+  "art": "spanish",
+  "added": "2026-11-26T00:24:59.000Z",
+  "time": "5 minutes",
+  "yield": "one 16 oz latte",
+  "level": "Easy",
+  "blurb": "AeroPress coffee sweetened with condensed milk and poured over cold milk and ice, for a caramel-brown top melting into a pale, creamy bottom.",
+  "scale": {
+   "kind": "count",
+   "base": 1,
+   "unit": "lattes"
+  },
+  "ingredients": [
+   [
+    "#",
+    "Coffee concentrate"
+   ],
+   [
+    "18 g",
+    "Ground coffee"
+   ],
+   [
+    "90 g",
+    "Hot water"
+   ],
+   [
+    "30 g",
+    "Sweetened condensed milk"
+   ],
+   [
+    "#",
+    "Milk"
+   ],
+   [
+    "180 g",
+    "Cold whole milk"
+   ],
+   [
+    "as needed",
+    "Ice"
+   ]
+  ],
+  "ingNote": "",
+  "steps": [
+   "Brew your AeroPress coffee with 90 g hot water.",
+   "Press into a small cup.",
+   "While hot, whisk in 30 g condensed milk until fully dissolved.",
+   "Let the coffee mixture cool for **2–3 minutes**.",
+   "Fill your 16 oz glass with cold milk.",
+   "Add ice.",
+   "Slowly pour the coffee-condensed milk mixture over the ice."
+  ],
+  "tips": [
+   "The condensed milk sweetens the coffee layer itself, giving you a caramel-brown coffee top against a pale white milk bottom.",
+   "Pour slowly over the ice for a soft gradient rather than distinct layers."
+  ],
+  "notes": ""
+ },
+ {
   "id": "matcha-lattes",
   "title": "Matcha Lattes",
   "cat": "sips",
